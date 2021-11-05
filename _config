@@ -23,6 +23,9 @@ Order: update-alternatives:cross-aarch64-gcc11
 Ignore: libncurses6:cross-aarch64-gcc11
 Ignore: cross-aarch64-gcc11:libncurses6
 
+# 15.3 dropped these packages temporary
+Ignore: rpmlint-mini rpmlint-Factory
+
 # the checks are mostly not valid for cross build
 Support: !post-build-checks
 

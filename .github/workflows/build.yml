@@ -30,4 +30,5 @@ jobs:
         run: |
           builddir=`mktemp -d`
           git clone https://github.com/openSUSE/obs-build.git $builddir
-          $builddir/pbuild --vm-type=chroot || ../obs-build/pbuild --result
+          $builddir/pbuild --vm-type=chroot || $builddir/pbuild --result
+          cat _build.aarch64/busybox/_log

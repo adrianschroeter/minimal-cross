@@ -29,6 +29,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           builddir=`mktemp -d`
-          git clone https://github.com/openSUSE/obs-build.git $builddir
+          git clone https://github.com/adrianschroeter/obs-build.git $builddir
           $builddir/pbuild --vm-type=docker --single=hello || $builddir/pbuild --result
           cat _build.aarch64/busybox/_log
